@@ -1,23 +1,7 @@
 {
   "name": "typescript-serverless-starter-kit",
   "version": "1.0.0",
-  "arc": {
-    "app": "typescript-serverless-starter-kit",
-    "description": "A demo TypeScript Serverless app using Architect and Svelte",
-    "http": {
-      "/": {
-        "method": "get",
-        "src": "dist/http/get-index"
-      },
-      "/*": {
-        "method": "any",
-        "src": "dist/http/any-catchall"
-      }
-    },
-    "static": {
-      "fingerprint": true
-    }
-  },
+  
   "scripts": {
     "build-backend": "tsc",
     "build-backend-watch": "tsc -w",
@@ -32,7 +16,7 @@
   },
   "dependencies": {
     "@architect/architect": "^8.3.7",
-    "dotenv": "^8.2.0",
+    "@architect/functions": "^3.13.8",
     "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
